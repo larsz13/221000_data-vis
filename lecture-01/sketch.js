@@ -1,3 +1,5 @@
+let data = [10,103,80,160,30,50];
+
 function setup() {
     createCanvas(800, 800);
     rectMode(CENTER);
@@ -7,5 +9,7 @@ function setup() {
   
   function draw() {
     background(0);
-    circle(mouseX,mouseY,200);
+    for(let i=0;i<data.length;i++){
+      rect(i*120+80,height/2,100,data[i]*2);
+    }
     }
